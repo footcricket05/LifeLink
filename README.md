@@ -39,6 +39,6 @@ This project is licensed under the MIT License - see the [`LICENSE`](https://git
 
 ## Get in Touch :mailbox:
 
-**LifeLink Team** - [Your Contact Information]
+**LifeLink Team** - [Shaurya Srinet](@footcricket05), [Shounak Chandra](@Shounak2003) & [Ananya Kannan](Ananya-Kannan)
 
 Project Link: [https://github.com/footcricket05/LifeLink](https://github.com/footcricket05/LifeLink)
