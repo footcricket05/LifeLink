@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <html>
-	<head>
-		<title>Login Page</title>
-	</head>
-	<body>
-		<div class="jumbotron">
-					<center><h1 class="display-4">Organ Donation and Procurement Management System</h1></center>
-		</div>
-		<form class="container" action = "/login" method = "POST">
-				<div class="form-group">
-					<label>Username</label>
-					<input name = "username" type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
-				</div>
-				<div class="form-group">
-					<label>Password</label>
-					<input name = "password" type="password" class="form-control" id="inputPassword" placeholder="Password">
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</body>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <center><h1 class="display-4">Organ Donation and Procurement Management System</h1></center>
+    </div>
+    <form class="container" id="loginForm" action="/login" method="POST">
+        <div class="form-group">
+            <label>Username</label>
+            <input name="username" type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            var username = document.getElementById("inputUsername").value;
+            var password = document.getElementById("inputPassword").value;
+
+            if (username === "admin" && password === "admin") {
+                window.location.href = "home.html"; // Redirect to home.html
+            } else {
+                // Optionally, you can display an error message or perform other actions for incorrect credentials
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+
+        // Prevent navigating back to previous page or tab
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+</body>
 </html>

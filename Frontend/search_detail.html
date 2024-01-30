@@ -10,19 +10,19 @@
 <html>
 
 <head>
-	<title>Search Student Details</title>
+	<title>Search User Details</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-dark bg-dark justify-content-between">
-		<form action="/home">
-			<button style="border: 0px solid transparent;" class="btn btn-outline-primary">HOME</button>
-		</form>
-		<form class="form-inline" action="/logout">
-			<label style="color:white; padding-right: 10px">Hi {{session.get('username')}}!</label>
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-		</form>
-	</nav>
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+    <form id="homeForm">
+        <button style="border: 0px solid transparent;" class="btn btn-outline-primary">HOME</button>
+    </form>
+    <form id="logoutForm">
+        <label style="color:white; padding-right: 10px">Hi admin!</label>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+    </form>
+</nav>
 	<div class="jumbotron">
 		<center>
 			<h1 class="display-4">Organ Donation and Procurement Management System</h1>
@@ -38,5 +38,17 @@
 		<button class = "btn btn-primary" type="submit" style="width:24%;" name="update">Update User Details</button>
 		<button class = "btn btn-primary" type="submit" style="width:24%;" name="delete">Delete User</button>
 	</form>
+
+	<script>
+    document.getElementById("homeForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "home.html";
+    });
+
+    document.getElementById("logoutForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "login.html";
+    });
+</script>
 	</body>
 </html>
