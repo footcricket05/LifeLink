@@ -1,4 +1,4 @@
-# LifeLink :hospital: :heart:
+# LifeLink :hospital: 🫀
 
 Welcome to **LifeLink**, a pivotal platform for managing and streamlining the organ donation and transplant process. LifeLink bridges the gap between patients in need, generous donors, devoted doctors, and diligent organizations. 🌍💚
 
