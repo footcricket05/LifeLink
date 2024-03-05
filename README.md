@@ -36,4 +36,7 @@ We warmly welcome contributions, issues, and feature requests! Feel free to fork
 ## License :scroll:
 
 This project is licensed under the MIT License - see the [`LICENSE`](https://github.com/footcricket05/LifeLink/blob/main/LICENSE) file for details.
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5d351eb2e1836e3a9180646f15ba077aad0fe81
