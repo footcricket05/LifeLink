@@ -36,9 +36,3 @@ We warmly welcome contributions, issues, and feature requests! Feel free to fork
 ## License :scroll:
 
 This project is licensed under the MIT License - see the [`LICENSE`](https://github.com/footcricket05/LifeLink/blob/main/LICENSE) file for details.
-
-## Get in Touch :mailbox:
-
-**LifeLink Team** - [Shaurya Srinet](https://github.com/footcricket05), [Shounak Chandra](https://github.com/SHounak2003) & [Ananya Kannan](https://github.com/Ananya-Kannan)
-
-Project Link: [https://github.com/footcricket05/LifeLink](https://github.com/footcricket05/LifeLink)
