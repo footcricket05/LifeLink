@@ -27,7 +27,11 @@ Welcome to **LifeLink**, a pivotal platform for managing and streamlining the or
    cd LifeLink
    ```
 3. **Set up the MySQL database** using the SQL scripts provided in the repository.
-4. **Access the application** via your preferred web browser.
+4. **Run the Flask application**:
+   ```bash
+   flask run
+   ```
+5. **Access the application** via your preferred web browser at [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 ## How to Contribute :handshake:
 
